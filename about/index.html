@@ -1,11 +1,156 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>About</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <h1>About Us</h1>
-    <a href="/">Back Home</a>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Omaha Dietitian — Telehealth Nutrition Counseling</title>
+  <meta name="description" content="Meet your Omaha-based registered dietitian offering personalized telehealth nutrition sessions to help you feel your best — mind and body.">
+  <meta name="keywords" content="Omaha dietitian, telehealth dietitian, nutrition coach Omaha, online nutritionist, healthy eating coach">
+  <meta name="author" content="Omaha Dietitian" />
+  <style>
+    :root {
+      --primary: #e67e22;
+      --secondary: #fef5e7;
+      --light-bg: #fffefb;
+      --dark-text: #2c3e50;
+      --body-text: #555;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--body-text);
+      line-height: 1.6;
+      padding-bottom: 70px; /* space for fixed CTA */
+    }
+
+    header {
+      background-color: var(--secondary);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      color: var(--primary);
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--dark-text);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      color: var(--dark-text);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    section p {
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #fdf2e9;
+      color: var(--body-text);
+      font-size: 0.9rem;
+    }
+
+    /* Fixed CTA Button */
+    .cta-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--primary);
+      text-align: center;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+
+    .cta-fixed a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .cta-fixed a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 0.5rem 0.5rem 0 0;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Omaha Dietitian</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about/index.html">About Me</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Meet Your Dietitian</h2>
+    <p>Hi there! I’m a registered dietitian based in Omaha, passionate about helping people rediscover food as a source of nourishment and joy — not stress. With years of experience in nutrition counseling, I specialize in creating realistic, enjoyable plans that support your unique goals.</p>
+  </section>
+
+  <section>
+    <h2>My Approach</h2>
+    <p>Every person’s relationship with food is different. That’s why I take a compassionate, evidence-based approach to help you find balance — without restriction or guilt. My telehealth practice makes it easy to get personalized support no matter where you are in Nebraska or beyond.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Omaha Dietitian. All rights reserved. | <a href="index.html">Home</a>
+  </footer>
+
+  <div class="cta-fixed">
+    <a href="#" target="_blank">📅 Book an Appointment</a>
+  </div>
+</body>
 </html>

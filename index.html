@@ -1,14 +1,191 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <h1>Welcome!</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omaha Dietitian | Personalized Telehealth Nutrition Counseling</title>
+  <meta name="description" content="Work with a registered dietitian in Omaha for personalized, science-based nutrition counseling — all available through convenient telehealth sessions.">
+  <meta name="keywords" content="Omaha dietitian, telehealth nutritionist, nutrition counseling Omaha, online dietitian, meal planning, healthy eating Omaha">
+  <meta name="author" content="Omaha Dietitian" />
+  <style>
+    :root {
+      --primary: #e67e22;
+      --secondary: #fef5e7;
+      --light-bg: #fffefb;
+      --dark-text: #2c3e50;
+      --body-text: #555;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--body-text);
+      line-height: 1.6;
+      padding-bottom: 70px; /* space for fixed CTA */
+    }
+
+    header {
+      background-color: var(--secondary);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      color: var(--primary);
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--dark-text);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #ffeccc, #fff9f3);
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: var(--dark-text);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto 2rem;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h3 {
+      color: var(--dark-text);
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    section p {
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #fdf2e9;
+      color: var(--body-text);
+      font-size: 0.9rem;
+    }
+
+    /* Fixed CTA Button */
+    .cta-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--primary);
+      text-align: center;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+
+    .cta-fixed a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .cta-fixed a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 0.5rem 0.5rem 0 0;
+      }
+
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Omaha Dietitian</h1>
     <nav>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about/index.html">About Me</a>
     </nav>
-  </body>
+  </header>
+
+  <section class="hero">
+    <h2>Nutrition Made Simple — For Every Lifestyle</h2>
+    <p>Whether you're looking to manage weight, improve your relationship with food, or gain confidence in your meals, I offer expert telehealth nutrition counseling that fits your schedule and goals.</p>
+  </section>
+
+  <section>
+    <h3>How Telehealth Nutrition Works</h3>
+    <p>Meet with me from the comfort of your home! All sessions are done virtually, allowing you to receive one-on-one guidance without needing to travel. Together, we’ll build a plan that’s realistic, sustainable, and tailored to you.</p>
+  </section>
+
+  <section>
+    <h3>Specialties</h3>
+    <p>• Weight management<br>
+       • Digestive health (IBS, gut-friendly nutrition)<br>
+       • Plant-based and heart-healthy diets<br>
+       • Diabetes and blood sugar balance<br>
+       • Sports and performance nutrition</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Omaha Dietitian. All rights reserved. | <a href="about/index.html">Learn More</a>
+  </footer>
+
+  <div class="cta-fixed">
+    <a href="#" target="_blank">📅 Book an Appointment</a>
+  </div>
+</body>
 </html>
