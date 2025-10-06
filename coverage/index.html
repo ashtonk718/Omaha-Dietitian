@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coverage | Hannah Kirtley, RD</title>
+  <meta name="description" content="Insurance coverage and state coverage for telehealth nutrition counseling with Hannah Kirtley, RD.">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Fixed Navigation -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="/omaha.png" alt="Omaha Logo" class="logo" />
+    </div>
+    <div class="nav-center">
+      <h1>Hannah Kirtley, RD</h1>
+    </div>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/coverage">Coverage</a>
+      </nav>
+      <a href="https://www.faynutrition.com/dietitians/hannah-kirtley" target="_blank" class="book-btn">Book Appointment</a>
+      <div class="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/about">About Me</a>
+    <a href="/coverage">Coverage</a>
+    <a href="https://www.faynutrition.com/dietitians/hannah-kirtley" target="_blank">Book Appointment</a>
+  </div>
+
+  <!-- Coverage Section -->
+  <section class="coverage-section">
+    <h2>Insurance Coverage</h2>
+    <div class="insurance-logos">
+      <img src="/aetna.png" alt="Aetna" />
+      <img src="/cigna.png" alt="Cigna" />
+      <img src="/Golden Rule.png" alt="Golden Rule" />
+      <img src="/Optum.png" alt="Optum" />
+      <img src="/oxford.png" alt="Oxford" />
+      <img src="/select health.png" alt="Select Health" />
+      <img src="/uh.png" alt="United Healthcare" />
+      <img src="/umr.png" alt="UMR" />
+    </div>
+
+    <h2>State Coverage</h2>
+    <div class="state-coverage">
+      <img src="/map.png" alt="States Covered" class="map-img" />
+      <div class="state-list">
+        <span>AK</span><span>AZ</span><span>CA</span><span>CO</span><span>CT</span>
+        <span>HI</span><span>ID</span><span>IN</span><span>MA</span><span>MI</span>
+        <span>NE</span><span>NH</span><span>NJ</span><span>NY</span><span>OK</span>
+        <span>OR</span><span>PA</span><span>TX</span><span>UT</span><span>VT</span>
+        <span>VA</span><span>WA</span><span>WV</span><span>WI</span><span>WY</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Hannah Kirtley, RD. All rights reserved.
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="cta-mobile">
+    <a href="https://www.faynutrition.com/dietitians/hannah-kirtley" target="_blank">Book Appointment</a>
+  </div>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

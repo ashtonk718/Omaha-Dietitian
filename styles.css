@@ -1,0 +1,677 @@
+:root {
+  --primary: #5b69e6;
+  --light-purple: #f5f7ff;
+  --dark-text: #2c3e50;
+  --body-text: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--body-text);
+  background-color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-left .logo {
+  height: 40px;
+}
+
+.nav-center h1 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.book-btn {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.book-btn:hover {
+  background: #4b58d4;
+}
+
+/* Hamburger (mobile only) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--dark-text);
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu a:hover {
+  background: var(--light-purple);
+}
+
+/* Section base styles */
+section {
+  padding: 6rem 2rem 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.white-bg {
+  background: white;
+}
+
+.purple-bg {
+  background: var(--light-purple);
+}
+
+/* Insurance section */
+.insurance-section h2 {
+  color: var(--dark-text);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.insurance-section p {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.insurance-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.insurance-logos img {
+  max-height: 60px;
+}
+
+.see-more {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Bio section */
+.bio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 1rem;
+}
+
+.bio-img {
+  width: 280px;
+  height: auto;
+  border: 16px solid var(--primary);
+  border-radius: 1px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.bio-text {
+  max-width: 400px;
+}
+
+.bio-text h3 {
+  color: var(--dark-text);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Approach section */
+.approach-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+/* Telehealth section */
+.telehealth-section h3 {
+  margin-bottom: 1rem;
+}
+
+.telehealth-section ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.telehealth-section li {
+  margin: 0.5rem 0;
+}
+
+.insurance-note {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Map placeholder */
+.map-placeholder {
+  width: 100%;
+  height: 300px;
+  background: var(--light-purple);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--light-purple);
+  color: var(--dark-text);
+  font-size: 0.9rem;
+}
+
+/* Mobile Sticky CTA */
+.cta-mobile {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+  .nav-links, .book-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  section {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--primary);
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .cta-mobile a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+}
+
+
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  background-color: var(--light-purple);;
+}
+
+.map-img {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid var(--light-purple);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Telehealth section (unchanged look, just without insurance text) */
+.telehealth-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.telehealth-section h3 {
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.telehealth-section ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.telehealth-section li {
+  margin: 0.5rem 0;
+}
+
+/* Insurance display section */
+.insurance-display {
+  padding: 3.5rem 2rem;
+  text-align: center;
+}
+
+.insurance-display h3 {
+  color: var(--dark-text);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.insurance-display .insurance-note {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.insurance-display .insurance-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.insurance-display .insurance-logos img {
+  max-height: 60px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.insurance-display .insurance-logos img:hover {
+  transform: scale(1.08);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.telehealth-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.telehealth-section h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.telehealth-section .subtitle {
+  color: #5b69e6;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.calendar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 900px; margin: 0 auto; } 
+.calendar-card { background: #fff; color: #111; border: 2px solid #5b69e6; border-radius: 8px; padding: 20px 25px; text-align: left; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease, box-shadow 0.2s ease; } 
+.calendar-card:hover { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); } 
+.calendar-date { text-align: center; font-weight: bold; font-size: 1.3rem; margin-bottom: 10px; color: #222; } 
+.calendar-session { background-color: #5b69e6; color: #fff; font-weight: 600; padding: 8px 12px; border-radius: 6px; text-align: center; margin-bottom: 15px; } 
+.calendar-card ul { list-style-type: disc; margin-left: 25px; color: #1a1a8c; font-size: 0.95rem; line-height: 1.6; } 
+.calendar-card li { margin-bottom: 6px; }
+
+
+
+
+
+
+/*About me ---------------------------*/
+/* ============================= */
+/* About Page Styles */
+/* ============================= */
+
+.about-hero {
+  display: flex;
+  flex-wrap: nowrap; /* prevent stacking */
+  align-items: flex-start; /* align top */
+  justify-content: center;
+  gap: 2rem; /* space between image and content */
+  padding: 5rem 2rem;
+  background: var(--light-purple);
+}
+
+
+.about-image {
+  flex: 0 0 auto; /* don't shrink */
+}
+
+.about-content {
+  flex: 1 1 auto; /* take remaining space */
+}
+.about-intro {
+  max-width: 600px;
+  text-align: left;
+}
+
+.modalities {
+  display: flex;
+  flex-wrap: wrap; /* keep pills wrapping if needed */
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: flex-start; /* align pills left */
+}
+
+.modality {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease;
+}
+
+.modality:hover {
+  background: #4b58d4;
+}
+
+.about-intro p {
+  font-size: 1rem;
+  color: var(--body-text);
+  line-height: 1.7;
+}
+
+.about-intro strong {
+  color: var(--dark-text);
+}
+
+/* Highlighted text colors */
+.green-text { color: #2e8b57; }
+.blue-text { color: #1e90ff; }
+.red-text { color: #e53935; }
+.pink-text { color: #d46fd0; }
+.orange-text { color: #ffa726; }
+.purple-text { color: #8e6de0; }
+.teal-text { color: #00bfa6; }
+
+/* Background section */
+.about-background {
+  padding: 4rem 2rem;
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-background h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-background p {
+  margin-bottom: 1.3rem;
+  font-size: 1rem;
+  color: var(--body-text);
+  line-height: 1.7;
+}
+
+/* Divider accent */
+.about-divider {
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+  margin: 2rem auto;
+}
+
+.about-page-title {
+  margin: 5rem 0 1rem; /* top 3rem, bottom 2rem */
+  text-align: center;
+  font-size: 2rem; /* adjust for visual balance */
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.about-background {
+  background: #f5f7ff; /* subtle light purple for contrast */
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 4rem auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.about-background h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.background-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--dark-text);
+  margin-bottom: 1.5rem;
+}
+
+/* Optional subtle divider under the heading */
+.about-background h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column; /* stack elements vertically */
+    align-items: center;    /* center items horizontally */
+    text-align: center;     /* center text */
+    gap: 1.5rem;            /* space between stacked items */
+  }
+
+  .about-image img {
+    width: 80%; /* make image responsive */
+    max-width: 320px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-intro, .approach-text {
+    max-width: 95%;
+  }
+
+  .modalities {
+    justify-content: center; /* center the pills */
+  }
+}
+
+
+
+
+
+/*Coverage*/
+
+
+/* Coverage Section */
+.coverage-section {
+  padding: 6rem 2rem 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.coverage-section h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.insurance-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.insurance-logos img {
+  max-height: 60px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.insurance-logos img:hover {
+  transform: scale(1.08);
+}
+
+.state-coverage {
+  margin-top: 2rem;
+}
+
+.state-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+.state-list span {
+  background: var(--light-purple);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.map-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 4px solid var(--light-purple);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .insurance-logos {
+    gap: 1rem;
+  }
+
+  .state-list {
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+}
+
+
+
+/* Mobile: make each insurance logo full width */
+@media (max-width: 768px) {
+  .insurance-logos {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .insurance-logos img {
+    max-width: 200px; /* optional: control size */
+    width: 80%; /* or 100% for full width */
+    height: auto;
+  }
+}

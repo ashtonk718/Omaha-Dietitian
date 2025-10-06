@@ -3,154 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Omaha Dietitian — Telehealth Nutrition Counseling</title>
-  <meta name="description" content="Meet your Omaha-based registered dietitian offering personalized telehealth nutrition sessions to help you feel your best — mind and body.">
-  <meta name="keywords" content="Omaha dietitian, telehealth dietitian, nutrition coach Omaha, online nutritionist, healthy eating coach">
-  <meta name="author" content="Omaha Dietitian" />
-  <style>
-    :root {
-      --primary: #e67e22;
-      --secondary: #fef5e7;
-      --light-bg: #fffefb;
-      --dark-text: #2c3e50;
-      --body-text: #555;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--light-bg);
-      color: var(--body-text);
-      line-height: 1.6;
-      padding-bottom: 70px; /* space for fixed CTA */
-    }
-
-    header {
-      background-color: var(--secondary);
-      padding: 1.2rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    header h1 {
-      color: var(--primary);
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    nav a {
-      margin-left: 1rem;
-      text-decoration: none;
-      color: var(--dark-text);
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    section h2 {
-      color: var(--dark-text);
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-
-    section p {
-      margin-bottom: 1.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #fdf2e9;
-      color: var(--body-text);
-      font-size: 0.9rem;
-    }
-
-    /* Fixed CTA Button */
-    .cta-fixed {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: var(--primary);
-      text-align: center;
-      padding: 1rem 0;
-      z-index: 1000;
-    }
-
-    .cta-fixed a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    .cta-fixed a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav a {
-        margin: 0.5rem 0.5rem 0 0;
-      }
-
-      section {
-        padding: 2rem 1rem;
-      }
-    }
-  </style>
+  <title>Hannah Kirtley, RD | Telehealth Dietitian</title>
+  <meta name="description" content="Telehealth nutrition counseling with Hannah Kirtley, RD — specialized care for women, babies, and families. Covered by insurance in 25 states.">
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Omaha Dietitian</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About Me</a>
-    </nav>
+  <!-- Fixed Navigation -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="/omaha.png" alt="Omaha Logo" class="logo" />
+    </div>
+    <div class="nav-center">
+      <h1>Hannah Kirtley, RD</h1>
+    </div>
+    <div class="nav-right">
+      <nav class="nav-links">
+ <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/coverage">Coverage</a>
+      </nav>
+      <a href="https://www.faynutrition.com/dietitians/hannah-kirtley" target="_blank" class="book-btn">Book Appointment</a>
+      <div class="hamburger">&#9776;</div>
+    </div>
   </header>
 
-  <section>
-    <h2>Meet Your Dietitian</h2>
-    <p>Hi there! I’m a registered dietitian based in Omaha, passionate about helping people rediscover food as a source of nourishment and joy — not stress. With years of experience in nutrition counseling, I specialize in creating realistic, enjoyable plans that support your unique goals.</p>
-  </section>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+ <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/coverage">Coverage</a>
+    <a href="https://www.faynutrition.com/dietitians/hannah-kirtley" target="_blank">Book Appointment</a>
+  </div>
 
-  <section>
-    <h2>My Approach</h2>
-    <p>Every person’s relationship with food is different. That’s why I take a compassionate, evidence-based approach to help you find balance — without restriction or guilt. My telehealth practice makes it easy to get personalized support no matter where you are in Nebraska or beyond.</p>
-  </section>
 
+<h1 class="about-page-title">About Me</h1>
+
+
+<!-- About Hero Section -->
+<section class="about-hero">
+  <div class="about-image">
+    <img src="/hannah.jpg" alt="Hannah Kirtley, RD" class="bio-img" />
+  </div>
+  <div class="about-content">
+    <div class="modalities">
+      <div class="modality">Motivational Interviewing</div>
+      <div class="modality">Accountability</div>
+      <div class="modality">Meal Planning</div>
+      <div class="modality">Personalized Macros</div>
+      <div class="modality">Exercise</div>
+      <div class="modality">Intuitive Eating</div>
+    </div>
+    <p class="approach-text">
+      I help clients of all ages and stages see that <strong>“all foods can fit”</strong> — even as we work to 
+      <span class="green-text">manage weight</span>, <span class="blue-text">improve heart health</span>, 
+      <span class="red-text">reduce diabetes risk</span>, and so much more. 
+      My heart holds a special place for family nutrition: 
+      <span class="pink-text">pregnancy</span>, <span class="orange-text">postpartum</span>, 
+      <span class="purple-text">infancy</span>, <span class="teal-text">toddlerhood</span>, 
+      and <span class="blue-text">childhood</span>. 
+      I love helping families get a <strong>healthy start</strong>. 
+      I follow <strong>research-based</strong> nutrition practices and apply my <strong>creativity</strong>, too. 
+      I offer <strong>straightforward</strong> tips and equip clients to eat healthfully on any budget.
+    </p>
+  </div>
+</section>
+
+
+<!-- Background Section -->
+<section class="about-background">
+  <h2>Background</h2>
+  <div class="background-content">
+    <p>My heart holds a special place for family nutrition: pregnancy, postpartum, infancy, toddlerhood, and childhood. As a mom of two, I understand how each stage holds unique challenges. My passion is to journey alongside families, teaching simple habit changes that can transform health and give a healthy start to all.</p>
+
+    <p>Aside from family nutrition, I love counseling every age and stage, teaching how “all foods can fit” – even as we work to manage weight, improve heart health, reduce diabetes risk, and more. I enjoy communicating that nutrition can be simple and fit every budget. My sessions also include counseling on beginning exercise because I believe it holds an important role in a healthy lifestyle.</p>
+
+    <p>As a Registered Dietitian Nutritionist in Nebraska, I am a Licensed Medical Nutrition Therapist. I achieved my Master of Medical Nutrition Degree at University of Nebraska Medical Center. My primary experience has been in public health as a WIC dietitian and certified lactation counselor. I also work at my local YMCA as a group fitness instructor, weight loss program facilitator, and dietitian.</p>
+
+    <p>I believe nutrition is a science and I follow research-based practices. Clients drive my work, and I love sprinkling creativity to personalize plans, share recipes, and provide ongoing support. Nutrition and exercise are my hobbies-turned-career, and it is a privilege to serve my community as a dietitian.</p>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Omaha Dietitian. All rights reserved. | <a href="/">Home</a>
+    &copy; 2025 Hannah Kirtley, RD. All rights reserved.
   </footer>
 
-  <div class="cta-fixed">
-    <a href="#" target="_blank">📅 Book an Appointment</a>
+  <!-- Mobile Sticky CTA -->
+  <div class="cta-mobile">
+    <a href="https://www.faynutrition.com/dietitians/hannah-kirtley" target="_blank"> Book Appointment</a>
   </div>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
