@@ -102,6 +102,7 @@ body {
   width: 100%;
   left: 0;
   border-top: 1px solid #ddd;
+  margin-top: 15px;
 }
 
 .mobile-menu.open {
@@ -243,12 +244,33 @@ margin-top: 50px;
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 2rem;
   background: var(--light-purple);
+  text-align: center;
+  padding: 2rem 1rem;
   color: var(--dark-text);
   font-size: 0.9rem;
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  max-width: 300px;          /* adjust logo size */
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); /* subtle depth */
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
 
 /* Mobile Sticky CTA */
 .cta-mobile {
@@ -523,11 +545,12 @@ footer {
 }
 
 .about-page-title {
-  margin: 5rem 0 1rem; /* top 3rem, bottom 2rem */
+  margin: 7rem 0 1rem; /* top 3rem, bottom 2rem */
   text-align: center;
   font-size: 2rem; /* adjust for visual balance */
   color: var(--primary);
   font-weight: 600;
+
 }
 
 .about-background {
