@@ -1,0 +1,19 @@
+# robots.txt for https://omahadietitian.com
+# Last updated: 2025-10-10
+# This file controls what web crawlers (search engine bots) can access on your site.
+
+User-agent: *
+Disallow:
+
+# Optional: block sensitive or unnecessary directories (uncomment if these exist)
+# Disallow: /admin/
+# Disallow: /cgi-bin/
+# Disallow: /tmp/
+
+# Allow Googlebot Images to index your site images
+User-agent: Googlebot-Image
+Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://omahadietitian.com/sitemap.xml
