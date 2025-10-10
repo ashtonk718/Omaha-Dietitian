@@ -246,7 +246,7 @@ margin-top: 50px;
 footer {
   background: var(--light-purple);
   text-align: center;
-  padding: 2rem 1rem;
+padding: 2rem 1rem 5rem;
   color: var(--dark-text);
   font-size: 0.9rem;
 }
