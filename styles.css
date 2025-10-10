@@ -734,3 +734,62 @@ padding: 2rem 1rem 5rem;
     flex: 0 1 30%;          /* ~3 per row; will wrap as needed */
   }
 }
+
+
+
+.insurance-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.insurance-logos-container a {
+  display: inline-block;
+  flex: 0 1 10%;
+  text-align: center;
+}
+
+.insurance-logos-container img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.insurance-logos-container img:hover {
+  transform: scale(1.05);
+}
+
+
+/* 🩺 "Verify Coverage" link styling */
+.verify-coverage-link a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: var(--primary);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+
+/* 📱 Mobile optimization */
+@media (max-width: 600px) {
+  .insurance-logos-container {
+    gap: 0.75rem;
+  }
+
+  .insurance-logos-container a {
+    flex: 0 1 22%; /* ~4 per row */
+  }
+
+  .insurance-logos-container img {
+    max-width: 70px;
+  }
+}
+
