@@ -32,8 +32,11 @@ body {
   z-index: 1000;
 }
 
-.nav-left .logo {
+.nav-left h1 {
   height: 40px;
+    color: var(--primary);
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .nav-center h1 {
@@ -133,6 +136,12 @@ section {
 }
 
 /* Insurance section */
+.insurance-section{
+margin-top: 50px;
+
+}
+
+
 .insurance-section h2 {
   color: var(--dark-text);
   font-size: 1.8rem;
@@ -679,5 +688,26 @@ footer {
     max-width: 200px; /* optional: control size */
     width: 80%; /* or 100% for full width */
     height: auto;
+  }
+}
+
+
+
+
+/* Mobile: only the TOP insurance row should be side-by-side & smaller */
+@media (max-width: 768px) {
+  .insurance-section .insurance-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;              /* space between logos */
+    flex-direction: row;    /* override any column rule */
+  }
+
+  /* support <img> and linked <a><img></a> */
+  .insurance-section .insurance-logos img {
+    max-width: 90px;        /* smaller logos on phones */
+    height: auto;
+    flex: 0 1 30%;          /* ~3 per row; will wrap as needed */
   }
 }
