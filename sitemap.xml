@@ -18,4 +18,36 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://omahadietitian.com/aetna</loc>
+    <lastmod>2025-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://omahadietitian.com/cigna</loc>
+    <lastmod>2025-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://omahadietitian.com/golden-rule</loc>
+    <lastmod>2025-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://omahadietitian.com/optum</loc>
+    <lastmod>2025-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://omahadietitian.com/oxford</loc>
+    <lastmod>2025-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://omahadietitian.com/select-health</loc>
+    <lastmod>2025-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://omahadietitian.com/united-healthcare</loc>
+    <lastmod>2025-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://omahadietitian.com/umr</loc>
+    <lastmod>2025-10-10</lastmod>
+  </url>
 </urlset>
